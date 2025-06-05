@@ -28,9 +28,6 @@ body {
     transition: all 0.3s ease;
 }
 
-/* Tablette (768px - 1024px) */
-@media (max
-
 /* Header */
 .header {
     background-color: var(--primary);
