@@ -21,6 +21,15 @@ body {
     max-width: 1200px;
     margin: 0 auto;
 }
+/* Logo de base */
+.logo-img {
+    height: 80px; /* Taille desktop par défaut */
+    width: auto;
+    transition: all 0.3s ease;
+}
+
+/* Tablette (768px - 1024px) */
+@media (max
 
 /* Header */
 .header {
