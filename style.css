@@ -23,7 +23,7 @@ body {
 }
 /* Logo de base */
 .logo-img {
-    height: 80px; /* Taille desktop par défaut */
+    height: 150px; /* Taille desktop par défaut */
     width: auto;
     transition: all 0.3s ease;
 }
