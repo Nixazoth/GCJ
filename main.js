@@ -1,21 +1,27 @@
-// Mobile Menu Toggle
-document.addEventListener('DOMContentLoaded', function() {
-    const menuBtn = document.createElement('button');
-    menuBtn.className = 'mobile-menu-btn';
-    menuBtn.innerHTML = '☰';
-    document.querySelector('.header .container').prepend(menuBtn);
-    
-    menuBtn.addEventListener('click', function() {
-        document.querySelector('.navigation').classList.toggle('active');
-    });
-    
-    // Smooth Scrolling
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            e.preventDefault();
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
+document.addEventListener('DOMContentLoaded', () => {
+    // Animation des sections
+    const animateOnScroll = () => {
+        const cards = document.querySelectorAll('.card');
+        
+        cards.forEach(card => {
+            const cardPosition = card.getBoundingClientRect().top;
+            const screenPosition = window.innerHeight / 1.3;
+            
+            if (cardPosition < screenPosition) {
+                card.style.opacity = '1';
+                card.style.transform = 'translateY(0)';
+            }
         });
+    };
+
+    // Initial state
+    document.querySelectorAll('.card').forEach(card => {
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(50px)';
+        card.style.transition = 'all 0.8s ease';
     });
+
+    // Event listeners
+    window.addEventListener('scroll', animateOnScroll);
+    animateOnScroll(); // Trigger once on load
 });
