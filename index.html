@@ -3,44 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GCJ - Certification Professionnelle</title>
+    <title>GCJ - Gradation de Cartes de Jeux</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="animations.css"
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-    <div class="container">
-        <a href="/" class="logo">
-            <!-- Logo chargé directement depuis PostImage -->
+    <div class="centered-container">
+        <header>
             <img src="https://i.postimg.cc/zbpcTdBR/1000001913.jpg" 
-                 alt="GCJ Certification Professionnelle" 
-                 class="logo-img"
-                 loading="lazy"> <!-- Chargement lazy pour performance -->
-        </a>
-        <!-- Votre navigation ici -->
+                 alt="Logo GCJ" 
+                 class="logo"
+                 onerror="this.src='assets/fallback-logo.png'">
+            <h1>Gradation de Cartes de Jeux</h1>
+        </header>
+
+        <main>
+            <section class="card">
+                <div class="content-wrapper">
+                    <div class="text-content">
+                        <h2>Qui sommes-nous</h2>
+                        <p>Experts en certification de cartes de collections, et apres la description c à voir</p>
+                    </div>
+                    <div class="media-content">
+                        <img src="https://i.postimg.cc/7bKnT1cJ/image.png" 
+                             alt="Processus de certification"
+                             onerror="this.src='assets/fallback-image1.jpg'">
+                    </div>
+                </div>
+            </section>
+
+            <section class="card">
+                <div class="content-wrapper reverse">
+                    <div class="text-content">
+                        <h2>Notre objectif</h2>
+                        <p>Fournir la meilleure évaluation pour valoriser votre collection. Précision et transparence sont nos priorités. C'est aussi à voir pour la suite de la description</p>
+                    </div>
+                    <div class="media-content">
+                        <img src="https://media1.tenor.com/m/7glm60gqKEoAAAAC/tree-frog-tree-frog-grading.gif" 
+                             alt="Contrôle qualité"
+                             onerror="this.src='assets/fallback-image2.gif'">
+                    </div>
+                </div>
+            </section>
+
+            <section class="card simple">
+                <h2>Tarifs</h2>
+                <p class="highlight">À voir.</p>
+            </section>
+
+            <section class="card simple">
+                <h2>Contacts</h2>
+                <p class="highlight">Aussi à voir.</p>
+            </section>
+        </main>
     </div>
-            <nav class="navigation">
-                <ul>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="process.html">Processus</a></li>
-                    <li><a href="about.html">À propos</a></li>
-                    <li><a href="contact.html" class="btn">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <h1>Certification GCJ</h1>
-            <p>L'excellence professionnelle reconnue</p>
-            <a href="contact.html" class="btn btn-primary">Demander une évaluation</a>
-        </div>
-    </section>
-
-    <!-- Scripts -->
     <script src="js/main.js"></script>
 </body>
 </html>
