@@ -59,6 +59,7 @@ h1 {
 .highlight {
     display: flex;
     align-items: center;
+    justify-content: center; /* AJOUTÉ */
     gap: 8px; /* petit espace entre le logo et le texte */
 }
 
