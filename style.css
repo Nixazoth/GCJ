@@ -55,7 +55,16 @@ h1 {
     font-size: 2.5rem;
     margin-bottom: 2rem;
 }
+.highlight {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* petit espace entre le logo et le texte */
+}
 
+.snap-logo {
+    width: 20px;   /* taille du logo */
+    height: 20px;
+}
 /* Cartes */
 .card {
     background: rgba(255, 255, 255, 0.05);
