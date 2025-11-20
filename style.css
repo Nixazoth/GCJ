@@ -65,6 +65,28 @@ h1 {
     width: 20px;   /* taille du logo */
     height: 20px;
 }
+.btn-gcj {
+    display: inline-block;
+    padding: 12px 30px;
+    background: var(--accent);
+    color: var(--dark);
+    font-weight: 700;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.4);
+}
+
+.btn-gcj:hover {
+    background: #ffe08a;
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.7);
+    transform: scale(1.05);
+}
+
+.btn-gcj:active {
+    transform: scale(0.97);
+}
 /* Cartes */
 .card {
     background: rgba(255, 255, 255, 0.05);
